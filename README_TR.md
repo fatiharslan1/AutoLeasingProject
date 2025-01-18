@@ -17,9 +17,28 @@ C# ve asp.net kullanarak yaptığımız projemizi SQL kullanarak database bağla
 
 ## 📸 Ekran Görüntüleri
 
-![Ana Ekran](images/screenshot1.png)
-![Özellik 2](images/screenshot2.png)
+![Ana Ekran](img/CustomerLogin.png)
+![Özellik 2](img/CustomerCarPage.png)
+![Özellik 2](img/PaymentPage.png)
+![Özellik 2](img/NewCustomerPage.png)
+![Özellik 2](img/EmployeeLoginPage.png)
+![Özellik 2](img/EmployeeMainPage.png)
+![Özellik 2](img/CarListPage.png)
+![Özellik 2](img/CarReportPage.png)
+![Özellik 2](img/CarServicePage.png)
+![Özellik 2](img/CarDeliveryPage.png)
+![Özellik 2](img/NewCarPage.png)
+![Özellik 2](img/NewBranchPage.png)
+![Özellik 2](img/RevenuePage.png)
 
----
+
+
+
+
+
+
+
+
+
 
 
