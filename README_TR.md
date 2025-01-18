@@ -17,19 +17,19 @@ C# ve asp.net kullanarak yaptığımız projemizi SQL kullanarak database bağla
 
 ## 📸 Ekran Görüntüleri
 
-![Ana Ekran](img/CustomerLogin.png)
-![Özellik 2](img/CustomerCarPage.png)
-![Özellik 2](img/PaymentPage.png)
-![Özellik 2](img/NewCustomerPage.png)
-![Özellik 2](img/EmployeeLoginPage.png)
-![Özellik 2](img/EmployeeMainPage.png)
-![Özellik 2](img/CarListPage.png)
-![Özellik 2](img/CarReportPage.png)
-![Özellik 2](img/CarServicePage.png)
-![Özellik 2](img/CarDeliveryPage.png)
-![Özellik 2](img/NewCarPage.png)
-![Özellik 2](img/NewBranchPage.png)
-![Özellik 2](img/RevenuePage.png)
+![Customer Login](img/CustomerLogin.png)
+![Car Page](img/CustomerCarPage.png)
+![Payment Page](img/PaymentPage.png)
+![Register Page](img/NewCustomerPage.png)
+![Employee Login](img/EmployeeLoginPage.png)
+![Employee Main Page](img/EmployeeMainPage.png)
+![Car List Page](img/CarListPage.png)
+![Car Report Page](img/CarReportPage.png)
+![Car Service Page](img/CarServicePage.png)
+![Car Delivery Page](img/CarDeliveryPage.png)
+![Add Car Page](img/NewCarPage.png)
+![Add Branch Page](img/NewBranchPage.png)
+![Revenue Report](img/RevenuePage.png)
 
 
 
