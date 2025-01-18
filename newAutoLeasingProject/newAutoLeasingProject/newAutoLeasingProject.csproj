@@ -1,0 +1,470 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6BBEF86-03DA-493B-A456-AED1939116AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>newAutoLeasingProject</RootNamespace>
+    <AssemblyName>newAutoLeasingProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44304</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\AdminPages\BranchInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\BranchReportPage.aspx" />
+    <Content Include="Pages\AdminPages\CarAddPage.aspx" />
+    <Content Include="Pages\AdminPages\assets\choose.png" />
+    <Content Include="Pages\AdminPages\assets\client-1.jpg" />
+    <Content Include="Pages\AdminPages\assets\client-2.jpg" />
+    <Content Include="Pages\AdminPages\assets\client-3.jpg" />
+    <Content Include="Pages\AdminPages\assets\client-4.jpg" />
+    <Content Include="Pages\AdminPages\assets\client-5.jpg" />
+    <Content Include="Pages\AdminPages\assets\deals-1.png" />
+    <Content Include="Pages\AdminPages\assets\deals-10.png" />
+    <Content Include="Pages\AdminPages\assets\deals-11.png" />
+    <Content Include="Pages\AdminPages\assets\deals-12.png" />
+    <Content Include="Pages\AdminPages\assets\deals-13.png" />
+    <Content Include="Pages\AdminPages\assets\deals-14.png" />
+    <Content Include="Pages\AdminPages\assets\deals-15.png" />
+    <Content Include="Pages\AdminPages\assets\deals-2.png" />
+    <Content Include="Pages\AdminPages\assets\deals-3.png" />
+    <Content Include="Pages\AdminPages\assets\deals-4.png" />
+    <Content Include="Pages\AdminPages\assets\deals-5.png" />
+    <Content Include="Pages\AdminPages\assets\deals-6.png" />
+    <Content Include="Pages\AdminPages\assets\deals-7.png" />
+    <Content Include="Pages\AdminPages\assets\deals-8.png" />
+    <Content Include="Pages\AdminPages\assets\deals-9.png" />
+    <Content Include="Pages\AdminPages\assets\header.png" />
+    <Content Include="Pages\AdminPages\assets\logo-dark.png" />
+    <Content Include="Pages\AdminPages\assets\logo-white.png" />
+    <Content Include="Pages\AdminPages\assets\subscribe.png" />
+    <Content Include="Pages\AdminPages\BranchAddPage.aspx" />
+    <Content Include="Pages\AdminPages\CarInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\CarReportPage.aspx" />
+    <Content Include="Pages\AdminPages\CarUpdatePage.aspx" />
+    <Content Include="Pages\AdminPages\CustomerInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\CustomerUpdatePage.aspx" />
+    <Content Include="Pages\AdminPages\DeliveryInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\DeliveryUpdatePage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeAddPage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeHomePage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeLogInPage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeProfilePage.aspx" />
+    <Content Include="Pages\AdminPages\EmployeeUpdatePage.aspx" />
+    <Content Include="Pages\AdminPages\RevenueReportPage.aspx" />
+    <Content Include="Pages\AdminPages\ServiceInfo.aspx" />
+    <Content Include="Pages\AdminPages\styles.css" />
+    <Content Include="Pages\AdminPages\TransactionEditPage.aspx" />
+    <Content Include="Pages\AdminPages\TransactionInfoPage.aspx" />
+    <Content Include="Pages\AdminPages\TypeAddPage.aspx" />
+    <Content Include="Pages\AdminPages\BranchUpdatePage.aspx" />
+    <Content Include="Pages\CustomerPages\AgreementPage.aspx" />
+    <Content Include="Pages\CustomerPages\assets\choose.png" />
+    <Content Include="Pages\CustomerPages\assets\client-1.jpg" />
+    <Content Include="Pages\CustomerPages\assets\client-2.jpg" />
+    <Content Include="Pages\CustomerPages\assets\client-3.jpg" />
+    <Content Include="Pages\CustomerPages\assets\client-4.jpg" />
+    <Content Include="Pages\CustomerPages\assets\client-5.jpg" />
+    <Content Include="Pages\CustomerPages\assets\deals-1.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-10.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-11.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-12.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-13.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-14.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-15.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-2.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-3.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-4.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-5.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-6.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-7.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-8.png" />
+    <Content Include="Pages\CustomerPages\assets\deals-9.png" />
+    <Content Include="Pages\CustomerPages\assets\header.png" />
+    <Content Include="Pages\CustomerPages\assets\logo-dark.png" />
+    <Content Include="Pages\CustomerPages\assets\logo-white.png" />
+    <Content Include="Pages\CustomerPages\assets\subscribe.png" />
+    <Content Include="Pages\CustomerPages\CustomerLogInPage.aspx" />
+    <Content Include="Pages\CustomerPages\CustomerProfilePage.aspx" />
+    <Content Include="Pages\CustomerPages\CustomerSignUpPage.aspx" />
+    <Content Include="Pages\CustomerPages\MainPage.aspx" />
+    <Content Include="Pages\CustomerPages\PaymentPage.aspx" />
+    <Content Include="Pages\CustomerPages\RentalPage.aspx" />
+    <Content Include="Pages\CustomerPages\styles.css" />
+    <Content Include="styles.css" />
+    <Content Include="Web.config" />
+    <Content Include="Pages\AdminPages\web\about.html" />
+    <Content Include="Pages\AdminPages\web\contact.html" />
+    <Content Include="Pages\AdminPages\web\css\bootstrap.css" />
+    <Content Include="Pages\AdminPages\web\css\style.css" />
+    <Content Include="Pages\AdminPages\web\images\avatar.png" />
+    <Content Include="Pages\AdminPages\web\images\food.jpg" />
+    <Content Include="Pages\AdminPages\web\images\icon3.png" />
+    <Content Include="Pages\AdminPages\web\images\logo.jpg" />
+    <Content Include="Pages\AdminPages\web\images\man.jpg" />
+    <Content Include="Pages\AdminPages\web\images\more.png" />
+    <Content Include="Pages\AdminPages\web\images\post1.jpg" />
+    <Content Include="Pages\AdminPages\web\images\post2.jpg" />
+    <Content Include="Pages\AdminPages\web\images\post3.jpg" />
+    <Content Include="Pages\AdminPages\web\images\search.png" />
+    <Content Include="Pages\AdminPages\web\index.html" />
+    <Content Include="Pages\AdminPages\web\js\easing.js" />
+    <Content Include="Pages\AdminPages\web\js\jquery.min.js" />
+    <Content Include="Pages\AdminPages\web\js\move-top.js" />
+    <Content Include="Pages\AdminPages\web\single.html" />
+    <Content Include="Pages\AdminPages\web\w3layouts-License.txt" />
+    <Content Include="Pages\AdminPages\web\Yeni Metin Belgesi.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase\SqlConnectionClass.cs" />
+    <Compile Include="Pages\AdminPages\BranchInfoPage.aspx.cs">
+      <DependentUpon>BranchInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchInfoPage.aspx.designer.cs">
+      <DependentUpon>BranchInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchReportPage.aspx.cs">
+      <DependentUpon>BranchReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchReportPage.aspx.designer.cs">
+      <DependentUpon>BranchReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarAddPage.aspx.cs">
+      <DependentUpon>CarAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarAddPage.aspx.designer.cs">
+      <DependentUpon>CarAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchAddPage.aspx.cs">
+      <DependentUpon>BranchAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchAddPage.aspx.designer.cs">
+      <DependentUpon>BranchAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarInfoPage.aspx.cs">
+      <DependentUpon>CarInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarInfoPage.aspx.designer.cs">
+      <DependentUpon>CarInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarReportPage.aspx.cs">
+      <DependentUpon>CarReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarReportPage.aspx.designer.cs">
+      <DependentUpon>CarReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarUpdatePage.aspx.cs">
+      <DependentUpon>CarUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CarUpdatePage.aspx.designer.cs">
+      <DependentUpon>CarUpdatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CustomerInfoPage.aspx.cs">
+      <DependentUpon>CustomerInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CustomerInfoPage.aspx.designer.cs">
+      <DependentUpon>CustomerInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CustomerUpdatePage.aspx.cs">
+      <DependentUpon>CustomerUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CustomerUpdatePage.aspx.designer.cs">
+      <DependentUpon>CustomerUpdatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\DeliveryInfoPage.aspx.cs">
+      <DependentUpon>DeliveryInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\DeliveryInfoPage.aspx.designer.cs">
+      <DependentUpon>DeliveryInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\DeliveryUpdatePage.aspx.cs">
+      <DependentUpon>DeliveryUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\DeliveryUpdatePage.aspx.designer.cs">
+      <DependentUpon>DeliveryUpdatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeAddPage.aspx.cs">
+      <DependentUpon>EmployeeAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeAddPage.aspx.designer.cs">
+      <DependentUpon>EmployeeAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeHomePage.aspx.cs">
+      <DependentUpon>EmployeeHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeHomePage.aspx.designer.cs">
+      <DependentUpon>EmployeeHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeInfoPage.aspx.cs">
+      <DependentUpon>EmployeeInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeInfoPage.aspx.designer.cs">
+      <DependentUpon>EmployeeInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLayout.Master.cs">
+      <DependentUpon>EmployeeLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLayout.Master.designer.cs">
+      <DependentUpon>EmployeeLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLogInLayout.Master.cs">
+      <DependentUpon>EmployeeLogInLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLogInLayout.Master.designer.cs">
+      <DependentUpon>EmployeeLogInLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLogInPage.aspx.cs">
+      <DependentUpon>EmployeeLogInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeLogInPage.aspx.designer.cs">
+      <DependentUpon>EmployeeLogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeProfilePage.aspx.cs">
+      <DependentUpon>EmployeeProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeProfilePage.aspx.designer.cs">
+      <DependentUpon>EmployeeProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeUpdatePage.aspx.cs">
+      <DependentUpon>EmployeeUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeeUpdatePage.aspx.designer.cs">
+      <DependentUpon>EmployeeUpdatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\RevenueReportPage.aspx.cs">
+      <DependentUpon>RevenueReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\RevenueReportPage.aspx.designer.cs">
+      <DependentUpon>RevenueReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\ServiceInfo.aspx.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\ServiceInfo.aspx.designer.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TransactionEditPage.aspx.cs">
+      <DependentUpon>TransactionEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TransactionEditPage.aspx.designer.cs">
+      <DependentUpon>TransactionEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TransactionInfoPage.aspx.cs">
+      <DependentUpon>TransactionInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TransactionInfoPage.aspx.designer.cs">
+      <DependentUpon>TransactionInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TypeAddPage.aspx.cs">
+      <DependentUpon>TypeAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\TypeAddPage.aspx.designer.cs">
+      <DependentUpon>TypeAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchUpdatePage.aspx.cs">
+      <DependentUpon>BranchUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminPages\BranchUpdatePage.aspx.designer.cs">
+      <DependentUpon>BranchUpdatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\AgreementPage.aspx.cs">
+      <DependentUpon>AgreementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\AgreementPage.aspx.designer.cs">
+      <DependentUpon>AgreementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerLayout.Master.cs">
+      <DependentUpon>CustomerLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerLayout.Master.designer.cs">
+      <DependentUpon>CustomerLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerLogInPage.aspx.cs">
+      <DependentUpon>CustomerLogInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerLogInPage.aspx.designer.cs">
+      <DependentUpon>CustomerLogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerProfilePage.aspx.cs">
+      <DependentUpon>CustomerProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerProfilePage.aspx.designer.cs">
+      <DependentUpon>CustomerProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerSignUpPage.aspx.cs">
+      <DependentUpon>CustomerSignUpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\CustomerSignUpPage.aspx.designer.cs">
+      <DependentUpon>CustomerSignUpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\PaymentPage.aspx.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\PaymentPage.aspx.designer.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\RentalPage.aspx.cs">
+      <DependentUpon>RentalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerPages\RentalPage.aspx.designer.cs">
+      <DependentUpon>RentalPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Pages\CustomerPages\CustomerLayout.Master" />
+    <Content Include="Pages\CustomerPages\Customer.Master" />
+    <Content Include="Pages\AdminPages\EmployeeLayout.Master" />
+    <Content Include="Pages\AdminPages\EmployeeLogInLayout.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64899</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

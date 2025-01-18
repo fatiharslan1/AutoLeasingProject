@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerLayout.Master.cs" Inherits="newAutoLeasingProject.Pages.CustomerPages.Site1" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Car Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+
+                    <a href='<%= "/Pages/CustomerPages/MainPage.aspx?CustomerID=" + CustomerID %>' class="logo">
+
+                        <span>Car Rental</span>
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href='<%= "/Pages/CustomerPages/CustomerProfilePage.aspx?CustomerID=" + CustomerID %>'>
+                    <button class="btn bg-yellow-500 text-white py-2 px-4 rounded-md">Profil</button>
+                </a>
+                <a href='<%= "/Pages/CustomerPages/CustomerLoginPage.aspx"%>'>
+                    <button class="btn bg-red-500 text-white py-2 px-4 rounded-md">Çıkış Yap</button>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- İçerik Alanı -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="container"></div>
+    </asp:ContentPlaceHolder>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="/Pages/CustomerPages/MainPage.aspx" class="logo">
+                        <span>Car Rental</span>
+                    </a>
+                </div>
+                <p>
+                    Size en iyi araçları ve sorunsuz bir kiralama deneyimi sunuyoruz. Güncellemeler, özel teklifler ve daha fazlası için bizimle bağlantıda kalın. Güvenle sürün!
+                </p>
+                <ul class="footer__socials">
+                    <li><i class="ri-facebook-fill"></i></li>
+                    <li><i class="ri-twitter-fill"></i></li>
+                    <li><i class="ri-linkedin-fill"></i></li>
+                    <li><i class="ri-instagram-line"></i></li>
+                    <li><i class="ri-youtube-fill"></i></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Hizmetlerimiz</h4>
+                <ul class="footer__links">
+                    <li>Ana Sayfa</li>
+                    <li>Hakkımızda</li>
+                    <li>Kiralama Fırsatları</li>
+                    <li>Neden Bizi Seçmelisiniz?</li>
+                    <li>Yorumlar</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Araç Modelleri</h4>
+                <ul class="footer__links">
+                    <li>Toyota Corolla</li>
+                    <li>Toyota Noah</li>
+                    <li>Toyota Allion</li>
+                    <li>Toyota Premio</li>
+                    <li>Mitsubishi Pajero</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>İletişim</h4>
+                <ul class="footer__links">
+                    <li><i class="ri-phone-fill"></i>+90 123 456 7890</li>
+                    <li><i class="ri-map-pin-fill"></i>İstanbul, Türkiye</li>
+                    <li><i class="ri-mail-fill"></i>info@carrental.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Telif Hakkı © 2024 Web Design Mastery. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>

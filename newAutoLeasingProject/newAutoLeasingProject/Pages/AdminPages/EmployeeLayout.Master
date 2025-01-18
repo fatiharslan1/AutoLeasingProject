@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmployeeLayout.Master.cs" Inherits="newAutoLeasingProject.Pages.AdminPages.Site1" %>
+
+<!DOCTYPE HTML>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Get Car - Araç Kiralama</title>
+    <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="web/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Get Car, Araç Kiralama, Responsive, Bootstrap Web Templates" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="web/js/move-top.js"></script>
+    <script src="web/js/easing.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span.menu").click(function () {
+                $(".top-menu ul").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="top-menu">
+                <a href="EmployeeHomePage.aspx" class="logo">
+                    <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+                </a>
+                <span class="menu"></span>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="CarInfoPage" runat="server" Text="Arabalar"></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="CustomerInfoPage" runat="server" Text="Müşteriler"></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="DeliveryInfoPage" runat="server" Text="Araç Teslim"></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="BranchInfoPage" runat="server" Text="Şubeler"></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="RevenueReportPage" runat="server" Text="Gelir Raporu"></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="CarReportPage" runat="server" Text="Araç Raporu"></asp:HyperLink></li>                 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>
+
