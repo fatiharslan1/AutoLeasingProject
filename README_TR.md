@@ -24,7 +24,7 @@ C# ve asp.net kullanarak yaptığımız projemizi SQL kullanarak database bağla
 ![Employee Login](img/EmployeeLoginPage.png)
 ![Employee Main Page](img/EmployeeMainPage.png)
 ![Car List Page](img/CarListPage.png)
-![Car Report Page](img/CarReportPage.png)
+![Car Report Page](img/CarReport.png)
 ![Car Service Page](img/CarServicePage.png)
 ![Car Delivery Page](img/CarDeliveryPage.png)
 ![Add Car Page](img/NewCarPage.png)
