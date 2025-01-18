@@ -1,6 +1,6 @@
 # Auto Leasing (Araç Kiralama) Projesi
 
-![Proje Görseli](images/project-banner.png)
+![Proje Görseli](AutoLeasingProject/img/CustomerMainPage.png)
 
 ## 🚀 Proje Hakkında
 
