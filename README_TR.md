@@ -4,7 +4,7 @@
 
 ## 🚀 Proje Hakkında
 
-**Auto Leasing**, Merhabalar, Düzce Üniversitesi Database Managment System dersi kapsamında yaptığımız Auto Leasing Web sitesini tanıtmak isterim. Takım arkadaşlarım Muhammet ve Uğur ile birlikte yaptık.
+**Auto Leasing**, Merhabalar, Düzce Üniversitesi Database Managment System dersi kapsamında yaptığımız Auto Leasing Web sitesini tanıtmak isterim. Takım arkadaşlarım [Muhammed Talha Bulut](https://www.linkedin.com/in/muhammedblt/) ve [Uğur Avşar](https://www.linkedin.com/in/uğur-avşar-471a69231/) ile birlikte yaptık.
 C# ve asp.net kullanarak yaptığımız projemizi SQL kullanarak database bağladık. Server olarak Microsoft SQL Server  kullandık.
 
 ## 🛠️ Özellikler
