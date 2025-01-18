@@ -18,3 +18,17 @@ We built this project using **C#** and **ASP.NET**, and connected it to a databa
 ---
 
 ## 📸 Screenshots
+
+![Customer Login](img/CustomerLogin.png)
+![Car Page](img/CustomerCarPage.png)
+![Payment Page](img/PaymentPage.png)
+![Register Page](img/NewCustomerPage.png)
+![Employee Login](img/EmployeeLoginPage.png)
+![Employee Main Page](img/EmployeeMainPage.png)
+![Car List Page](img/CarListPage.png)
+![Car Report Page](img/CarReport.png)
+![Car Service Page](img/CarServicePage.png)
+![Car Delivery Page](img/CarDeliveryPage.png)
+![Add Car Page](img/NewCarPage.png)
+![Add Branch Page](img/NewBranchPage.png)
+![Revenue Report](img/RevenuePage.png)
