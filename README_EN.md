@@ -4,7 +4,7 @@
 
 ## 🚀 About the Project
 
-**Auto Leasing** is a web application developed as part of the Database Management Systems course at Düzce University. I would like to introduce this project, which I developed with my teammates Muhammet and Uğur.  
+**Auto Leasing** is a web application developed as part of the Database Management Systems course at Düzce University. I would like to introduce this project, which I developed with my teammates [Muhammed Talha Bulut](https://www.linkedin.com/in/muhammedblt/) ve [Uğur Avşar](https://www.linkedin.com/in/uğur-avşar-471a69231/) .  
 We built this project using **C#** and **ASP.NET**, and connected it to a database using **SQL**. The server-side database is powered by **Microsoft SQL Server**.
 
 ---
